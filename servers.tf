@@ -15,7 +15,7 @@ resource "aws_instance" "frontend" {
 }
 ## DNS Record Frontend
 resource "aws_route53_record" "frontend" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "frontend.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -33,7 +33,7 @@ resource "aws_instance" "mongodb" {
 }
 ## DNS Record mongodb
 resource "aws_route53_record" "mongodb" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "mongodb.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -51,7 +51,7 @@ resource "aws_instance" "catalogue" {
 }
 ## DNS Record catalogue
 resource "aws_route53_record" "catalogue" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "catalogue.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -69,7 +69,7 @@ resource "aws_instance" "redis" {
 }
 ## DNS Record redis
 resource "aws_route53_record" "redis" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "redis.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -87,7 +87,7 @@ resource "aws_instance" "user" {
 }
 ## DNS Record user
 resource "aws_route53_record" "user" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "user.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -105,7 +105,7 @@ resource "aws_instance" "shipping" {
 }
 ## DNS Record shipping
 resource "aws_route53_record" "shipping" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "shipping.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -123,7 +123,7 @@ resource "aws_instance" "mysql" {
 }
 ## DNS Record mysql
 resource "aws_route53_record" "mysql" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "mysql.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -141,7 +141,7 @@ resource "aws_instance" "rabbitmq" {
 }
 ## DNS Record rabbitmq
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "rabbitmqdevopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -159,7 +159,7 @@ resource "aws_instance" "cart" {
 }
 ## DNS Record cart
 resource "aws_route53_record" "cart" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "cart.devopsdude.cloud"
   type    = "A"
   ttl     = 30
@@ -177,7 +177,7 @@ resource "aws_instance" "payment" {
 }
 ## DNS Record payment
 resource "aws_route53_record" "payment" {
-  zone_id = Z08715033JYQ7WM1QMZBS
+  zone_id = "Z08715033JYQ7WM1QMZBS"
   name    = "payment.devopsdude.cloud"
   type    = "A"
   ttl     = 30
