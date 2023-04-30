@@ -68,7 +68,7 @@ resource "aws_instance" "redis" {
   }
 }
 ## DNS Record redis
-resource "aws_route53_record" "redis {
+resource "aws_route53_record" "redis" {
   zone_id = Z08715033JYQ7WM1QMZBS
   name    = "redis.devopsdude.cloud"
   type    = "A"
