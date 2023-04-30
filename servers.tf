@@ -4,10 +4,15 @@ data "aws_ami" "centos" {
   name_regex       = "Centos-8-DevOps-Practice"
 }
 
+#declaring a variable
+variable "instance_type" {
+  default = var.instance_type
+}
+
 # Frontend EC2 instance
 resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "frontend"
@@ -25,7 +30,7 @@ resource "aws_route53_record" "frontend" {
 # mongodb EC2 instance
 resource "aws_instance" "mongodb" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "mongodb"
@@ -43,7 +48,7 @@ resource "aws_route53_record" "mongodb" {
 # catalogue EC2 instance
 resource "aws_instance" "catalogue" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "catalogue"
@@ -61,7 +66,7 @@ resource "aws_route53_record" "catalogue" {
 # redis EC2 instance
 resource "aws_instance" "redis" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "redis"
@@ -79,7 +84,7 @@ resource "aws_route53_record" "redis" {
 # user EC2 instance
 resource "aws_instance" "user" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "user"
@@ -97,7 +102,7 @@ resource "aws_route53_record" "user" {
 # shipping EC2 instance
 resource "aws_instance" "shipping" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "shipping"
@@ -115,7 +120,7 @@ resource "aws_route53_record" "shipping" {
 # mysql EC2 instance
 resource "aws_instance" "mysql" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "mysql"
@@ -133,7 +138,7 @@ resource "aws_route53_record" "mysql" {
 # rabbitmq EC2 instance
 resource "aws_instance" "rabbitmq" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "rabbitmq"
@@ -151,7 +156,7 @@ resource "aws_route53_record" "rabbitmq" {
 # cart EC2 instance
 resource "aws_instance" "cart" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "cart"
@@ -169,7 +174,7 @@ resource "aws_route53_record" "cart" {
 # payment EC2 instance
 resource "aws_instance" "payment" {
   ami           = data.aws_ami.centos.image_id
-  instance_type = "t3.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "payment"
