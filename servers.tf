@@ -1,6 +1,12 @@
+data "aws_ami" "centos" {
+  owners           = ["973714476881"]
+  most_recent      = true
+  name_regex       = "Centos-8-DevOps-Practice"
+}
+
 # Frontend EC2 instance
 resource "aws_instance" "frontend" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -10,7 +16,7 @@ resource "aws_instance" "frontend" {
 
 # mongodb EC2 instance
 resource "aws_instance" "mongodb" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -20,7 +26,7 @@ resource "aws_instance" "mongodb" {
 
 # catalogue EC2 instance
 resource "aws_instance" "catalogue" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -30,7 +36,7 @@ resource "aws_instance" "catalogue" {
 
 # redis EC2 instance
 resource "aws_instance" "redis" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -40,7 +46,7 @@ resource "aws_instance" "redis" {
 
 # user EC2 instance
 resource "aws_instance" "user" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -50,7 +56,7 @@ resource "aws_instance" "user" {
 
 # shipping EC2 instance
 resource "aws_instance" "shipping" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -60,7 +66,7 @@ resource "aws_instance" "shipping" {
 
 # mysql EC2 instance
 resource "aws_instance" "mysql" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -70,7 +76,7 @@ resource "aws_instance" "mysql" {
 
 # rabbitmq EC2 instance
 resource "aws_instance" "rabbitmq" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -80,7 +86,7 @@ resource "aws_instance" "rabbitmq" {
 
 # cart EC2 instance
 resource "aws_instance" "cart" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
@@ -90,7 +96,7 @@ resource "aws_instance" "cart" {
 
 # payment EC2 instance
 resource "aws_instance" "payment" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+  ami           = data.aws_ami.centos.image_id
   instance_type = "t3.micro"
 
   tags = {
