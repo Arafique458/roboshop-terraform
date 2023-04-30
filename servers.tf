@@ -142,7 +142,7 @@ resource "aws_instance" "rabbitmq" {
 ## DNS Record rabbitmq
 resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z08715033JYQ7WM1QMZBS"
-  name    = "rabbitmqdevopsdude.cloud"
+  name    = "rabbitmq.devopsdude.cloud"
   type    = "A"
   ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
