@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="717cbf8e-a7b9-4da2-84b5-55b63a92ec4f" name="Changes" comment="Keeping the code dry Introducing Modules">
-      <change afterPath="$PROJECT_DIR$/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env-dev/main.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/env-dev/main.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/module/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/module/vars.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/servers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683489658984</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Keeping the code dry Introducing Modules">
+      <created>1683491486658</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683491486658</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
