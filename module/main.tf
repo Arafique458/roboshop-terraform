@@ -18,11 +18,11 @@ resource "null_resource" "provisioner" {
       type = "ssh"
       user = "centos"
       password = "DevOps321"
-      host = aws_instance.instance.private_ip
+      host = self.private_ip
     }
     inline = [
       "rm -rf roboshop-shell",
-      "git clone https://github.com/Arafique458/roboshop-shell.git",
+      "git clone https://github.com/Arafique458/roboshop-shell",
       "cd roboshop-shell",
       "sudo bash ${var.component_name}.sh ${var.password}"
     ]
