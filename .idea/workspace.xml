@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="717cbf8e-a7b9-4da2-84b5-55b63a92ec4f" name="Changes" comment="Keeping the code dry Introducing Modules">
-      <change beforePath="$PROJECT_DIR$/env-dev/main.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/env-dev/main.tfvars" afterDir="false" />
-    </list>
+    <list default="true" id="717cbf8e-a7b9-4da2-84b5-55b63a92ec4f" name="Changes" comment="Keeping the code dry Introducing Modules" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683483099438</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Keeping the code dry Introducing Modules">
+      <created>1683483792471</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683483792471</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
