@@ -35,6 +35,7 @@
       <recent name="$PROJECT_DIR$/env-prod" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../learn-terraform/01-vars" />
       <recent name="$PROJECT_DIR$/module" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -125,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683494762679</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Keeping the code dry adding conditions.">
+      <created>1683496138729</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683496138729</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
