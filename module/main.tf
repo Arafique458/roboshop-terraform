@@ -31,7 +31,7 @@ resource "null_resource" "provisioner" {
 
 ## DNS Records
 resource "aws_route53_record" "records" {
-  zone_id = "Z08715033JYQ7WM1QMZBS"
+  zone_id = "Z088434732NM2WQFK5QS"
   name    = "${var.component_name}.devopsdude.cloud"
   type    = "A"
   ttl     = 30
