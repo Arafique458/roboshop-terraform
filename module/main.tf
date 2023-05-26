@@ -32,7 +32,7 @@ resource "aws_route53_record" "records" {
   records = [aws_instance.instance.private_ip]
 }
 
-resource "aws_iam_role" "test_role" {
+resource "aws_iam_role" "role" {
   name = "${var.component_name}-${var.env}-role"
 
   assume_role_policy = jsonencode({
