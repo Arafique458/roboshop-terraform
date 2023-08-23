@@ -27,7 +27,7 @@ app_servers = {
   }
 }
 
-env               = "dev"
+env = "dev"
 
 database_servers= {
 

@@ -10,7 +10,7 @@ resource "aws_instance" "instance" {
 }
 
 resource "null_resource" "provisioner" {
-   depends_on = [aws_instance.instance, aws_route53_record.records]
+  depends_on = [aws_instance.instance, aws_route53_record.records]
   triggers = {
     private_ip = aws_instance.instance.private_ip
   }
@@ -80,9 +80,9 @@ resource "aws_iam_role_policy" "ssm-ps-policy" {
           "ssm:GetParameter"
         ],
         "Resource" : [
-          "arn:aws:ssm:us-east-1:244179256416:parameter/${var.env}.${var.component_name}.*",
-          "arn:aws:kms:us-east-1:244179256416:key/801d82e5-19a3-4b80-88c6-5947b7b90508"
-          ]
+          "arn:aws:kms:us-east-1:244179256416:key/801d82e5-19a3-4b80-88c6-5947b7b90508" ,
+          "arn:aws:ssm:us-east-1:244179256416:parameter/${var.env}.${var.component_name}.*"
+        ]
           }
     ]
   })
